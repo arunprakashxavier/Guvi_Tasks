@@ -1,3 +1,11 @@
+/*
+Management System
+
+1.Design a Java program that uses OOP principles to model the Book Create two classes: Book and Library. The Book class should have attributes 
+such as bookID, title, author, and is Available. The Library class should include an array to store book objects. 
+2.Provide methods to add books, remove book search books (using id)and display books.
+Write a Java program that demonstrates the use of these classes and methods by allowing the user to interact with the library system.
+*/
 class Book {
     private int bookID;
     private String bookTitle;
@@ -109,7 +117,7 @@ public class BookManagementSystem {
             System.out.println("Choose an option: ");
 
             int choice = scanner.nextInt();
-            switch(choice) {
+            switch(choice) { //using Switch statement im implementing this
                 case 1:
                     System.out.println("Enter Book ID: ");
                     int bookID = scanner.nextInt();
