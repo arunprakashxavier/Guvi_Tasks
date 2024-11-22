@@ -1,0 +1,108 @@
+<!--    8.Use the table tag to design given image     -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Table Example</title>
+    <style>
+        .display {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .display,
+        .display td,
+        .display th {
+            border: 1px solid black;
+        }
+
+        .subtable {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .subtable td {
+            border-top: 0;
+            border-bottom: 1px solid black;
+            border-left: 0;
+            border-right: 1px solid black;
+        }
+
+        .subtable tr td:last-of-type {
+            border-top: 0;
+            border-bottom: 1px solid black;
+            border-left: 0;
+            border-right: 0;
+        }
+
+        .subtable tr:last-of-type td {
+            border-top: 0;
+            border-bottom: 0;
+            border-left: 0;
+            border-right: 1px solid black;
+        }
+
+        .subtable tr:last-of-type td:last-of-type {
+            border: 0;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        td.d-subtable {
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nested Table Example</h1>
+    <table class="display" cellpadding="0">
+        <tr>
+            <th>Customer</th>
+            <th>Items</th>
+            <th>Payments</th>
+        </tr>
+        <tr>
+            <td>Customer Name</td>
+            <td class="d-subtable">
+                <table class="subtable" cellpadding="0">
+                    <tr>
+                        <td>Item1</td>
+                        <td>5</td>
+                        <td>$400.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item2</td>
+                        <td>10</td>
+                        <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item3</td>
+                        <td>2</td>
+                        <td>$500.00</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="d-subtable">
+                <table class="subtable" cellpadding="0">
+                    <tr>
+                        <td>12 Sep 2018</td>
+                        <td>$3,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>18 Sep 2018</td>
+                        <td>$2,000.00</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!--   9. Write HTML input tags snippet to show default values for all Form elements.     -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form with Default Values</title>
+</head>
+
+<body>
+    <h1>Simple Form</h1>
+    <form>
+
+        <!-- Text Input -->
+        <label>Name:</label>
+        <input type="text" name="name" value="Priya Arun">
+        <br><br>
+
+        <!-- Email Input -->
+        <label>Email:</label>
+        <input type="email" name="email" value="Priyaandarun@example.com">
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <!-- Checkbox -->
+        <label>
+            <input type="checkbox" name="subscribe" value="yes" checked> Subscribe
+        </label>
+        <br><br>
+
+        <!-- Select Dropdown -->
+        <label>Country:</label>
+        <select name="country">
+            <option value="usa" selected>USA</option>
+            <option value="uk">UK</option>
+            <option value="india">India</option>
+        </select>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
