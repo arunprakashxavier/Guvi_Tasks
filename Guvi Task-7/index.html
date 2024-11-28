@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Prakash - Resume</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .header {
+            background-color: #669999;
+            color: white;
+            text-align: center;
+            padding: 50px 10px 10px;
+            /* Reduced top and bottom padding */
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            position: absolute;
+            top: 60%;
+            /* Adjusted to better fit with smaller header */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffc107;
+            display: inline-block;
+            padding: 6px 15px;
+            border-radius: 20px;
+            z-index: 2;
+        }
+
+        .header img {
+            width: 130px;
+            /* Slightly reduced image size */
+            height: 130px;
+            border-radius: 50%;
+            position: absolute;
+            top: 30%;
+            /* Adjusted to center within smaller header */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid white;
+            z-index: 1;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 0.9em;
+            color: #ddd;
+            padding-top: 120px;
+            /* Reduced padding to fit within new header size */
+            margin: 10px 0 30px;
+            /* Adjusted margin */
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #ddd;
+            transform: translateX(-50%);
+        }
+
+        .left-section,
+        .right-section {
+            flex: 1;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: #ff9900;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .skills-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .skills-bar span {
+            flex: 1;
+        }
+
+        .bar {
+            flex: 3;
+            height: 8px;
+            background-color: #ddd;
+            margin-left: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .bar span {
+            display: block;
+            height: 100%;
+            background-color: #4caf50;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .icon {
+            width: 40px;
+            /* Increased width */
+            height: 40px;
+            /* Added height for consistency */
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/Arun Profile pic.jpg" alt="Profile Picture">
+        <h1>Arun Prakash</h1>
+        <p class="contact-info">Kunnathur, Pudukkottai-621316 | +91 9080890020 | arunprakash2629@gmail.com</p>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="section">
+                <div class="section-header">
+                    <img class="icon" src="images/profile.png" alt="Icon">
+                    <h2>Profile</h2>
+                </div>
+                <p>Energetic and detail-oriented graduate in electronic and communication engineering with a
+                    solid understanding of Java. Experienced in instrumentation, and eager to contribute as a developer.
+                    Committed to applying my skills and learning new ones to drive success.</p>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <img class="icon" src="images/icons8-about-me-48.png" alt="Icon">
+                    <h2>About Me</h2>
+                </div>
+                <p>Date of Birth : November 29, 1999</p>
+                <p>Nationality   : Indian</p>
+                <p>Gender        : Male</p>
+
+
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <img class="icon" src="images/Skills icon.png" alt="Icon">
+                    <h2>Skills</h2>
+                </div>
+                <h3>Technical Skills</h3>
+                <div class="skills-bar"><span>HTML</span>
+                    <div class="bar"><span style="width: 80%;"></span></div>
+                </div>
+                <div class="skills-bar"><span>CSS</span>
+                    <div class="bar"><span style="width: 70%;"></span></div>
+                </div>
+                <div class="skills-bar"><span>JavaScript</span>
+                    <div class="bar"><span style="width: 75%;"></span></div>
+                </div>
+                <div class="skills-bar"><span>Java</span>
+                    <div class="bar"><span style="width: 81%;"></span></div>
+                </div>
+                <div class="skills-bar"><span>MySQL</span>
+                    <div class="bar"><span style="width: 90%;"></span></div>
+                </div>
+                <div class="skills-bar"><span>C Programming</span>
+                    <div class="bar"><span style="width: 70%;"></span></div>
+                </div>
+                <h3>Additional Skills</h3>
+                <ul>
+                    <li>Time Management</li>
+                    <li>Problem-Solving</li>
+                    <li>Critical Thinking</li>
+                    <li>Leadership and Team Management</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="section">
+                <div class="section-header">
+                    <img class="icon" src="images/Experience.png" alt="Icon">
+                    <h2>Work Experience</h2>
+                </div>
+
+                <h3>Graduate Apprentice</h3>
+                <p>Bunge India PVT LTD - Trichy (11/2023 - 02/2024)</p>
+                <ul>
+                    <li>Gained practical experience by working on real projects under the guidance of experienced
+                        professionals.</li>
+                    <li>Learned about industry standards, regulations, and best practices.</li>
+                    <li>Supported the team in problem-solving and project execution.</li>
+                </ul>
+
+                <h3>Supervisor</h3>
+                <p>S Prince Hightech PVT LTD - Chennai (01/2023 - 04/2023)</p>
+                <ul>
+                    <li>Assign tasks and responsibilities based on employees' strengths and expertise.</li>
+                    <li>Ensure tasks are completed on time and meet quality standards.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <img class="icon" src="images/education (2).png" alt="Icon">
+                    <h2>Education</h2>
+                </div>
+                <h3>Electronics and Communication Engineering</h3>
+                <p>K Ramakrsihnan college of technology, Tiruchirapalli (2018 - 2022)</p>
+                <ul>
+                    <li>Percentage: 73.50%</li>
+                    <li>Project: Designed and developed an half adder in opti-FDTD analyzer.</li>
+
+                </ul>
+                <h3>Higher Secondary Certificate</h3>
+                <p>Chelammal matriculation higher secondary school, Tiruchirapalli (2017 - 2018)</p>
+                <ul>
+                    <li>Percentage: 66.83%</li>
+                </ul>
+
+                <h3>Secondary School Leaving Certificate</h3>
+                <p>Chelammal matriculation higher secondary school, Tiruchirapalli (2015 - 2016)</p>
+                <ul>
+                    <li>Percentage: 90.20%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for interactivity or additional functionalities can go here
+        console.log("Resume loaded successfully");
+    </script>
+</body>
+
+</html>
